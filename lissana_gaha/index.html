@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <style>
+            .button {border-radius: 100%;}
+            .button {
+            background-color: green;
+            border: none;
+            color: black;
+            padding: 35px 35px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 20px;
+            margin: 1px 1px;
+            cursor: pointer;}
+
+            #game {
+                position: absolute;
+                top:0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin:auto;
+            }
+            #image {
+                height: 256px;
+                width: 256px;
+                background: 
+                    url('spritestrip.png') 0px 0px;
+}
+        </style>
+    </head>
+    
+    <body onload="startGame()">
+        
+
+        <canvas id="game" style="z-index: -1">
+            
+        </canvas>
+        <button class="button" onclick="accelerate(-0.2)">Press repeatedly</button>
+        <div id="demo">
+            <!--<p id="image" onmouseover="animateScript()" onmouseout="stopAnimate()">-->
+            <p id="image"></p>
+        </div>
+        
+    </body>
+    <script src="lissana_gaha.js"></script>
+</html>   
